@@ -1,0 +1,21 @@
+{
+  "name": "next-device-detection",
+  "version": "1.0.0",
+  "description": "Detect device type (Mobile, Tablet, Desktop). Use in react and Next.js",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nishantshah977/next-device-detection"
+  },
+  "keywords": [
+    "nextjs",
+    "device-detection",
+    "next",
+    "responsive-design",
+    "next-js",
+    "next-device-detection"
+  ],
+  "author": "Nishant Shah",
+  "license": "GNU GPLv3"
+}

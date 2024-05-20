@@ -35,6 +35,25 @@ function MyComponent() {
 export default MyComponent;
 ```
 
+#### Detect if detection is complete
+
+```js
+if (!device.detected) {
+  // Show loading or return null
+}
+```
+
+# Changelog
+
+**v1.1.0:**
+
+- `useLayoutEffect` hook instead of `useEffect`.
+- New property to track if detection is complete.
+
+**v1.0.1:**
+
+- Proper Docs Added
+
 # Contributing
 
 Help to improve this project by a PR. Feel free to open issue or submit an PR.

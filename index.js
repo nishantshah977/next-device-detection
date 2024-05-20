@@ -1,14 +1,15 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 
 function useDeviceDetector() {
   const [device, setDevice] = useState({
     isMobile: false,
     isTablet: false,
     isDesktop: false,
+    detected: false,
   });
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
       if (width < 768) {
@@ -16,18 +17,21 @@ function useDeviceDetector() {
           isMobile: true,
           isTablet: false,
           isDesktop: false,
+          detected: true,
         });
       } else if (width >= 768 && width < 1024) {
         setDevice({
           isMobile: false,
           isTablet: true,
           isDesktop: false,
+          detected: true,
         });
       } else {
         setDevice({
           isMobile: false,
           isTablet: false,
           isDesktop: true,
+          detected: true,
         });
       }
     };
